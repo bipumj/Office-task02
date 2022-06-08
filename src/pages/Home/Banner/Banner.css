@@ -1,0 +1,25 @@
+.banner-img {
+    height: calc(100vh - 86px);
+    object-fit: cover;
+}
+
+.carousel-caption {
+    color: rgb(26, 62, 52) !important;
+    background: rgba(255, 255, 255, 0.601);
+    border-radius: 20px;
+}
+
+.carousel-caption h3 {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.carousel-caption p {
+    color: #000 !important;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: rgb(26, 62, 52) !important;
+}
