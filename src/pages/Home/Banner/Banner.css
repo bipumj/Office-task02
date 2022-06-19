@@ -1,5 +1,10 @@
 .banner-img {
-    height: calc(100vh - 86px);
+    height: calc(100vh - 256px);
+    object-fit: cover;
+}
+
+.banner2 {
+    height: calc(100vh - 556px);
     object-fit: cover;
 }
 

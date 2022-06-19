@@ -3,67 +3,63 @@ import { Container, Nav, Navbar, NavDropdown, Offcanvas } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import CustomLink from '../CustomLink/CustomLink';
 import '../Header/Header.css'
+import Head from './Head';
 
 const Header = () => {
-    return (
-        <header>
-            {['xxl'].map((expand) => (
-                <Navbar key={expand} expand={expand} className="main-navbar ">
-                    <Container fluid>
-                        <Navbar.Brand as={Link} to={'/'} className='text-white fw-bold fs-6'>North Bangla Foundation</Navbar.Brand>
-                        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-                        <Navbar.Offcanvas
-                            id={`offcanvasNavbar-expand-${expand}`}
-                            aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-                            placement="end"
-                        >
-                            <Offcanvas.Header closeButton>
-                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                                    Close
-                                </Offcanvas.Title>
-                            </Offcanvas.Header>
 
-                            <Offcanvas.Body >
-                                <Nav className="justify-content-end flex-grow-1 pe-3 text-white">
-                                    <Nav.Link as={CustomLink} to={'/'} className='fw-semibold'>Home</Nav.Link>
-                                    <Nav.Link as={CustomLink} to={'/breaking'} >Breaking</Nav.Link>
-                                    <Nav.Link as={CustomLink} to={'/sponsorship-content'}>Sponsorship content</Nav.Link>
-                                    <Nav.Link as={CustomLink} to={'/branded-content'}>Branded content</Nav.Link>
-                                    <Nav.Link as={CustomLink} to={'/ai-generate-content'}>AI generate content</Nav.Link>
-                                    <Nav.Link as={CustomLink} to={'/video'}>Video</Nav.Link>
-                                    <Nav.Link as={CustomLink} to={'/photo'}>Photos</Nav.Link>
-                                    <Nav.Link as={CustomLink} to={'/payment'}>Payment</Nav.Link>
-                                    <NavDropdown
-                                        title="More" className='more-navbar'
-                                        id={`offcanvasNavbarDropdown-expand-${expand}`}
-                                    >
-                                        <div style={{ 'background- color': '#2F6276' }}>
-                                            <NavDropdown.Item as={CustomLink} to={'/login'}>LogIn</NavDropdown.Item>
-                                            <NavDropdown.Item as={CustomLink} to={'/signup'}>
-                                                SignUp
-                                            </NavDropdown.Item>
-                                            <NavDropdown.Divider />
-                                            <NavDropdown.Item as={CustomLink} to={'/setting'}>
-                                                Setting
-                                            </NavDropdown.Item>
-                                        </div>
-                                    </NavDropdown>
-                                </Nav>
-                                {/* <Form className="d-flex">
-                                    <FormControl
-                                        type="search"
-                                        placeholder="Search"
-                                        className="me-2"
-                                        aria-label="Search"
-                                    />
-                                    <Button variant="outline-success">Search</Button>
-                                </Form> */}
-                            </Offcanvas.Body>
-                        </Navbar.Offcanvas>
-                    </Container>
-                </Navbar>
-            ))}
-        </header>
+    return (
+        <>
+            <Head />
+            <header>
+                {['xxl'].map((expand) => (
+                    <Navbar key={expand} expand={expand} className="main-navbar ">
+                        <Container fluid>
+                            <Navbar.Brand as={Link} to={'/'} className='text-white fw-bold fs-6'>North Bangla Foundation</Navbar.Brand>
+                            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+                            <Navbar.Offcanvas
+                                id={`offcanvasNavbar-expand-${expand}`}
+                                aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+                                placement="end"
+                            >
+                                <Offcanvas.Header closeButton>
+                                    <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                                        Close
+                                    </Offcanvas.Title>
+                                </Offcanvas.Header>
+
+                                <Offcanvas.Body >
+                                    <Nav className="justify-content-end flex-grow-1 pe-3 text-white">
+                                        <Nav.Link as={CustomLink} to={'/'} className='fw-semibold'>Home</Nav.Link>
+                                        <Nav.Link as={CustomLink} to={'/breaking'} >Breaking</Nav.Link>
+                                        <Nav.Link as={CustomLink} to={'/sponsorship-content'}>Sponsorship content</Nav.Link>
+                                        <Nav.Link as={CustomLink} to={'/branded-content'}>Branded content</Nav.Link>
+                                        <Nav.Link as={CustomLink} to={'/ai-generate-content'}>AI generate content</Nav.Link>
+                                        <Nav.Link as={CustomLink} to={'/video'}>Video</Nav.Link>
+                                        <Nav.Link as={CustomLink} to={'/photo'}>Photos</Nav.Link>
+                                        <Nav.Link as={CustomLink} to={'/payment'}>Payment</Nav.Link>
+                                        <NavDropdown
+                                            title="More" className='more-navbar'
+                                            id={`offcanvasNavbarDropdown-expand-${expand}`}
+                                        >
+                                            <div style={{ 'background- color': '#2F6276' }}>
+                                                <NavDropdown.Item as={CustomLink} to={'/login'}>LogIn</NavDropdown.Item>
+                                                <NavDropdown.Item as={CustomLink} to={'/signup'}>
+                                                    SignUp
+                                                </NavDropdown.Item>
+                                                <NavDropdown.Divider />
+                                                <NavDropdown.Item as={CustomLink} to={'/setting'}>
+                                                    Setting
+                                                </NavDropdown.Item>
+                                            </div>
+                                        </NavDropdown>
+                                    </Nav>
+                                </Offcanvas.Body>
+                            </Navbar.Offcanvas>
+                        </Container>
+                    </Navbar>
+                ))}
+            </header>
+        </>
     );
 };
 
@@ -71,6 +67,15 @@ export default Header;
 
 
 
+{/* <Form className="d-flex">
+<FormControl
+    type="search"
+    placeholder="Search"
+    className="me-2"
+    aria-label="Search"
+/>
+<Button variant="outline-success">Search</Button>
+</Form> */}
 
 
 

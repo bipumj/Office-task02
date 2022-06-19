@@ -2,8 +2,7 @@ import React from 'react';
 import { Card, CardGroup } from 'react-bootstrap';
 
 const SingleAiGenerateContent = ({ AiGenerateContent }) => {
-    const { img, name, time, price, location
-    } = AiGenerateContent
+    const { img, name, time, price, location } = AiGenerateContent
     return (
         <div className="col-md-3">
             <CardGroup>
@@ -13,7 +12,7 @@ const SingleAiGenerateContent = ({ AiGenerateContent }) => {
                         <Card.Title className='mb-2' style={{ color: "#39364F" }}>{name}</Card.Title>
                         <Card.Text style={{ color: "#D84628" }} >{time}</Card.Text>
                         <p style={{ color: "#737287" }}>{location}</p>
-                        <p className='mb-3' style={{ color: "#737287" }}>{price}</p>
+                        {/* <p className='mb-3' style={{ color: "#737287" }}>{price}</p> */}
 
                     </Card.Body>
                     {/* <Card.Footer className='bg-primary'>
