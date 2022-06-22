@@ -7,3 +7,13 @@
 a {
     text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+
+    /* .service-title {
+        display: none;
+    } */
+    .middleMenu {
+        display: inline-block;
+    }
+}

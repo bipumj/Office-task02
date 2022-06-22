@@ -3,7 +3,7 @@ import { Button, Dropdown, DropdownButton } from 'react-bootstrap';
 
 const MenuItems = () => {
     return (
-        <div className='container d-flex text-center'>
+        <div className='container d-flex middleMenu'>
             <DropdownButton id="dropdown-item-button" variant="outline-dark" className='ms-2 fw-bold' title="Worldwide">
                 <Dropdown.Item as="button">Middle East</Dropdown.Item>
                 <Dropdown.Item as="button">Asia</Dropdown.Item>

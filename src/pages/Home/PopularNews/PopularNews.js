@@ -8,9 +8,9 @@ const PopularNews = () => {
         <section className='py-5'>
             <div className="container">
                 <div className="text-start">
-                    <p>Popular News</p>
+                    <p>Update Article</p>
                     <hr />
-                    <h2>Popular News</h2>
+                    <h2>Update Article</h2>
                 </div>
                 <div className='row g-3 pt-4'>
                     {
