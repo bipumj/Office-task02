@@ -495,7 +495,7 @@ const Home = () => {
                         <div className="d-flex justify-content-between">
                             <h2>Technology</h2>
                             <div className='mt-2'>
-                                <button onClick={() => navigate('/branded-content')} className='btn btn-dark w-20'>See More</button >
+                                <button onClick={() => navigate('/technology')} className='btn btn-dark w-20'>See More</button >
                             </div>
                         </div>
                     </div>
@@ -520,7 +520,7 @@ const Home = () => {
                         <div className="d-flex justify-content-between">
                             <h2>Investigative</h2>
                             <div className='mt-2'>
-                                <button onClick={() => navigate('/branded-content')} className='btn btn-dark w-20'>See More</button >
+                                <button onClick={() => navigate('/investigative')} className='btn btn-dark w-20'>See More</button >
                             </div>
                         </div>
                     </div>
